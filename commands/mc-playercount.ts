@@ -14,7 +14,7 @@ module.exports = {
         if (message.author.id === "939491082717249558") return;
         if (mess == 'jabba server') {
             message.channel.send(`${getRandom(randomEmotes)} jabba is retrieving server's data `)
-            var conn = new Rcon('mc-server.ldaq.org', 25575, 'mcsv789$');
+            var conn = new Rcon('mc-server.ldaq.org', 25575, process.env.RCON_PASS);
 
             conn.on('auth', function () {
                 // You must wait until this event is fired before sending any commands,

@@ -1,0 +1,1 @@
+A small extension of Jabba to help interacting with the minecraft server from discord.
